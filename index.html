@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NETHERLITH - Minecraft Builds Portfolio</title>
+<style>
+/* Font e colori */
+body {
+margin: 0;
+font-family: 'Georgia', serif;
+background:
+linear-gradient(rgba(29,29,29,0.85), rgba(29,29,29,0.85)),
+url('https://i.imgur.com/Ut1SxOv.jpeg') no-repeat center center fixed;
+background-size: cover;
+color: #f0f0f0;
+line-height: 1.6;
+}
+
+header {
+text-align: center;
+padding: 4rem 2rem 2rem;
+color: #80ff9f;
+text-shadow: 0 0 5px #3a8f3a;
+}
+
+header h1 {
+font-size: 3.8rem;
+margin-bottom: 0.2rem;
+}
+
+header p {
+font-size: 1.3rem;
+font-style: italic;
+color: #c1f0bbcc;
+}
+
+nav {
+background: rgba(22, 22, 22, 0.85);
+display: flex;
+justify-content: center;
+gap: 3rem;
+padding: 1rem 0;
+box-shadow: 0 2px 5px #0008;
+position: sticky;
+top: 0;
+z-index: 100;
+}
+
+nav a {
+color: #80ff9f;
+text-decoration: none;
+font-weight: 600;
+font-size: 1.1rem;
+transition: color 0.3s ease;
+}
+nav a:hover {
+color: #c0ffb3;
+}
+
+section {
+max-width: 1100px;
+margin: 3rem auto;
+padding: 0 1rem;
+background: rgba(20, 20, 20, 0.7);
+border-radius: 12px;
+box-shadow: 0 0 20px #004400aa;
+}
+
+h2 {
+border-bottom: 3px solid #80ff9f;
+padding-bottom: 0.4rem;
+margin-bottom: 1.8rem;
+font-size: 2.4rem;
+color: #aaffaa;
+text-shadow: 0 0 6px #207020aa;
+}
+
+p.intro-text {
+font-size: 1.15rem;
+margin-bottom: 2.5rem;
+color: #d4f3d9cc;
+font-style: italic;
+}
+
+/* Grid per immagini e testi */
+.grid {
+display: grid;
+gap: 1.8rem;
+}
+
+/* Portfolio: 2 colonne su desktop, 1 su mobile */
+#portfolio .grid {
+grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+/* Prices & Examples: 3 colonne su desktop */
+#examples .grid {
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.grid-item {
+background: #2a2a2add;
+border-radius: 14px;
+overflow: hidden;
+box-shadow: 0 0 8px #004400cc;
+display: flex;
+flex-direction: column;
+}
+
+.grid-item img {
+width: 100%;
+display: block;
+border-bottom: 2px solid #60ff7e;
+transition: transform 0.3s ease;
+}
+.grid-item img:hover {
+transform: scale(1.05);
+}
+
+.grid-item-content {
+padding: 1rem 1.2rem 1.8rem;
+flex-grow: 1;
+}
+
+.grid-item h3 {
+margin-top: 0.3rem;
+margin-bottom: 0.7rem;
+color: #90ffac;
+font-weight: 700;
+font-size: 1.3rem;
+text-shadow: 0 0 4px #48aa4caa;
+}
+
+.grid-item p {
+font-size: 1rem;
+color: #cde6cddd;
+margin-bottom: 0.8rem;
+flex-grow: 1;
+}
+
+.price {
+font-weight: 700;
+color: #ffd36e;
+font-size: 1.1rem;
+text-align: right;
+user-select: none;
+}
+
+/* Contact section */
+.contact {
+background: rgba(10, 10, 10, 0.9);
+text-align: center;
+padding: 2.5rem 1rem 3rem;
+border-top: 3px solid #80ff9f;
+border-radius: 0 0 12px 12px;
+}
+.contact h2 {
+margin-bottom: 1rem;
+}
+.contact p {
+font-size: 1.15rem;
+margin: 0.5rem 0;
+}
+.contact a {
+color: #80ff9f;
+text-decoration: none;
+font-weight: 600;
+}
+.contact a:hover {
+text-decoration: underline;
+}
+
+footer {
+text-align: center;
+font-size: 0.9rem;
+padding: 1.2rem 0;
+color: #aaa;
+background: #0a0a0acc;
+user-select: none;
+}
+
+/* Inspirational quote style */
+.quote {
+max-width: 700px;
+margin: 3rem auto 1rem;
+font-style: italic;
+font-size: 1.25rem;
+text-align: center;
+color: #a0e2a0cc;
+text-shadow: 0 0 4px #286828cc;
+}
+
+@media (max-width: 600px) {
+header h1 {
+font-size: 2.8rem;
+}
+h2 {
+font-size: 1.9rem;
+}
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>NETHERLITH</h1>
+<p>Professional Minecraft Build Portfolio — Medieval & Fantasy Creations</p>
+</header>
+
+<nav>
+<a href="#about">About Me</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#examples">Prices & Examples</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+<h2>About Me</h2>
+<p class="intro-text">
+Welcome to NETHERLITH — I’m Yulia, your creative guide into the realms of medieval and fantasy Minecraft builds.
+Whether you dream of towering castles, enchanting gardens, or mysterious mazes, I craft every detail with care and passion to bring your vision to life.
+Join me on this adventure, and let’s build worlds that inspire and amaze.
+</p>
+<p class="quote">“In every block, a story. In every build, a legacy.”</p>
+</section>
+
+<section id="portfolio">
+<h2>Build Portfolio</h2>
+<div class="grid">
+<div class="grid-item">
+<img src="https://i.imgur.com/U8T7L9r.jpeg" alt="Medieval Spawn Hub" />
+<div class="grid-item-content">
+<h3>Medieval Spawn Hub</h3>
+<p>A warm and inviting medieval-style hub, perfect as a welcoming point for players and events alike.
+Crafted with rich textures and atmospheric lighting to spark adventure right from the start.</p>
+</div>
+</div>
+
+<div class="grid-item">
+<img src="https://i.imgur.com/GOtCjkI.jpeg" alt="Enchanted Castle Gardens" />
+<div class="grid-item-content">
+<h3>Enchanted Castle Gardens</h3>
+<p>Tranquil and magical gardens designed to adorn castle courtyards and royal estates.
+With winding paths, vibrant flora, and hidden nooks, every corner invites exploration.</p>
+</div>
+</div>
+
+<div class="grid-item">
+<img src="https://i.imgur.com/k41Y8EN.jpeg" alt="Custom Maze" />
+<div class="grid-item-content">
+<h3>Custom Maze</h3>
+<p>Handcrafted labyrinths of varying complexity, perfect for fun challenges or secret hideouts.
+Each maze is designed to surprise and delight players of all skill levels.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="examples">
+<h2>Prices & Examples</h2>
+<p class="intro-text">My builds are crafted to fit your needs — from compact hubs to sprawling castles. Prices are indicative; reach out for a personalized quote!</p>
+<div class="grid">
